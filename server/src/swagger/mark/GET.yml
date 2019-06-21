@@ -1,0 +1,27 @@
+Return a mark key information based on its movie and its user
+---
+tags:
+  - mark
+parameters:
+  - name: movie
+    in: path
+    type: string
+    description: the name of the movie
+  - name: user_first_name
+    in: path
+    type: string
+    description: the first name of the user
+  - name: user_last_name
+    in: path
+    type: string
+    description: the last name of the user
+responses:
+  200:
+    description: The mark's information were successfully retrieved
+    schema:
+      example:
+        mark:
+          movie: Interstellar
+          user_first_name: Victor
+          user_last_name: Gauthier
+          value: 10

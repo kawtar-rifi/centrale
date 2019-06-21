@@ -1,0 +1,35 @@
+Update a mark based on the sent information
+---
+tags:
+  - mark
+parameters:
+  - name: movie
+    in: path
+    type: string
+    description: the name of the movie
+  - name: user_first_name
+    in: path
+    type: string
+    description: the first name of the user
+  - name: user_last_name
+    in: path
+    type: string
+    description: the last name of the user
+  - name: body
+    in: body
+    schema:
+      type: object
+      properties:
+        value:
+          type: integer
+          description: The value of the mark
+responses:
+  200:
+    description: The mark was successfully created
+    schema:
+      example:
+        mark:
+          movie: Interstellar
+          user_first_name: Victor
+          user_last_name: Gauthier
+          value: 10

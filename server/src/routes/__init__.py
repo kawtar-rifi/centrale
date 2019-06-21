@@ -1,1 +1,3 @@
-from .user import USER_BLUEPRINT
+from .user import USER_BLUEPRINT, USERS_BLUEPRINT
+from .movie import MOVIE_BLUEPRINT, MOVIES_BLUEPRINT
+from .mark import MARK_BLUEPRINT

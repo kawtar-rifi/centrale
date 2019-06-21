@@ -1,0 +1,11 @@
+#Return the list of the movies
+
+---
+tags:
+  - movie
+responses:
+  200:
+    description: All the movies were successfully retrieved
+    schema:
+      example:
+        list_of_movies: Catch me if you can, Black Butterfly

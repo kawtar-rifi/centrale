@@ -1,0 +1,19 @@
+Return a movie key information based on its title
+---
+tags:
+  - movie
+parameters:
+  - name: title
+    in: path
+    type: string
+    description: The title of the movie
+responses:
+  200:
+    description: The movie's information were successfully retrieved
+    schema:
+      example:
+        movie:
+          title: Catch me if you can
+          producer: Steven Spielberg
+          date: 2003
+          actor: Leonardo Dicaprio

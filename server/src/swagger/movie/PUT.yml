@@ -1,0 +1,33 @@
+Update a movie based on the sent information
+---
+tags:
+  - movie
+parameters:
+  - name: title
+    in: path
+    type: string
+    description: The title of the movie
+  - name: body
+    in: body
+    schema:
+      type: object
+      properties:
+        producer:
+          type: string
+          description: The producer of the movie
+        date:
+          type: integer
+          description: The date of the movie
+        actor:
+          type: string
+          description: The main actor of the movie
+responses:
+  200:
+    description: The movie was successfully created
+    schema:
+      example:
+        movie:
+          title: Catch me if you can
+          producer: Steven Spielberg
+          date: 2003
+          actor: Leonardo Dicaprio
